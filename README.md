@@ -44,3 +44,10 @@ Explain how users can run a script or command-line tool from your project.
 ```bash
 python your_script.py
 ```
+# Download Video-Music Project
+
+This project is a video and music downloader for YouTube. It is initially developed as a Windows application using custom Tkinter, and it will be extended to include a web version using Flask.
+
+## Folder Structure
+
+The project folder is divided into two sections: one for the Windows application and another for the web version.
