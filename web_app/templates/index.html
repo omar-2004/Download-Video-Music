@@ -1,0 +1,31 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Downloader</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/homepage.css') }}"
+    />
+  </head>
+  <body>
+    <form action="/download" method="post" onsubmit="return validateUrl()">
+      <h1>YouTube Downloader</h1>
+      <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" />
+      <label for="url">Enter YouTube URL:</label>
+      <input type="text" id="url" name="url" required />
+      <label for="format">Select Format:</label>
+      <select id="format" name="format">
+        <option value="video">Video</option>
+        <option value="audio">Audio (MP3)</option>
+      </select>
+      <div id="error-message" style="color: red"></div>
+      <button type="submit">Download</button>
+    </form>
+    <script src="{{ url_for('static', filename='js/homepage.js') }}"></script>
+  </body>
+</html>

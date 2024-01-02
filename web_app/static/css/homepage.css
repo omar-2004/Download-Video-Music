@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+  color: #081b3d;
+}
+
+body {
+  background-color: #e8e0d1;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+form {
+  width: clamp(400px, 70%, 900px);
+  border-radius: 45px;
+  background-color: #aea89c;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+form h1 {
+  font-family: "Rubik Glitch", sans-serif;
+  font-size: 3rem;
+  margin: 1rem;
+}
+form img {
+  width: clamp(100px, 20%, 200px);
+  margin: 1rem;
+}
+form input,
+form button,
+form select {
+  width: clamp(200px, 50%, 400px);
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+form input:focus,
+form button:focus,
+form select:focus {
+  outline: none;
+  border: 1px solid #000;
+}
+form button {
+  background-color: #081b3d;
+  color: #c9c9c9;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+form button:hover {
+  opacity: 0.8;
+}
+form #error-message {
+  margin: 0.5rem;
+}/*# sourceMappingURL=homepage.css.map */

@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+
+$primary-color: #aea89c;
+$secondary-color: #fff;
+$text-color: #081b3d;
+$background-color: #e8e0d1;
+// $background-color: rgba(209, 93, 93, 0.5);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+  color: $text-color;
+}
+body {
+  background-color: $background-color;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+form {
+  width: clamp(400px, 70%, 900px);
+  border-radius: 45px;
+  background-color: $primary-color;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  h1 {
+    font-family: "Rubik Glitch", sans-serif;
+    font-size: 3rem;
+    margin: 1rem;
+  }
+  img {
+    width: clamp(100px, 20%, 200px);
+    margin: 1rem;
+  }
+  input,
+  button,
+  select {
+    width: clamp(200px, 50%, 400px);
+    margin: 1rem;
+    padding: 0.5rem;
+    // border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    &:focus {
+      outline: none;
+      border: 1px solid #000;
+    }
+  }
+  button {
+    background-color: #081b3d;
+    color: #c9c9c9;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      // background-color: #aea89c;
+      opacity: 0.8;
+      // color: #000;
+    }
+  }
+  #error-message {
+    margin: 0.5rem;
+  }
+}
