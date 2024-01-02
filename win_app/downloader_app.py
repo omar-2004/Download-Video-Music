@@ -191,13 +191,5 @@ class Download:
         return string.replace("\\", "").replace("/", "")
 
 
-class ErrorMessageBox:
-    pass
-
-
-class SubmitMessageBox:
-    pass
-
-
 if __name__ == '__main__':
     App().mainloop()
